@@ -2,7 +2,7 @@
 <!--
 /*
 ** Copyright 2006, Google Inc.
-** Modified by Xiaomi Inc. 2015
+** Modified by Infinix Inc. 2015
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -21706,7 +21706,7 @@
         user=""
     />
 
-    <apn carrier="Grenada:Lime:Internet"
+    <apn carrier="Grelineagea:Lime:Internet"
         mcc="352"
         mnc="110"
         apn="internet"
@@ -21715,7 +21715,7 @@
         type="default"
     />
 
-    <apn carrier="Grenada:Lime:Mms"
+    <apn carrier="Grelineagea:Lime:Mms"
         mcc="352"
         mnc="110"
         apn="multimedia"
@@ -21726,7 +21726,7 @@
         type="mms"
     />
 
-    <apn carrier="Grenada:Lime:Modem"
+    <apn carrier="Grelineagea:Lime:Modem"
         mcc="352"
         mnc="110"
         apn="internet"

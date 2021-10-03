@@ -1,4 +1,4 @@
-Unified device tree for Xiaomi Redmi 6/6A (Cereus/Cactus)
+Unified device tree for Infinix Redmi 6/6A (Cereus/Cactus)
 ============== 
   
 Redmi 6 (Cereus)  
@@ -19,7 +19,7 @@ Rear Camera  | 12.0 MP + 5 MP, LED flash
 Front Camera | 5.0 MP
 Release Month | June 2018
  
-![Xiaomi Redmi 6](https://cdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-6.jpg "Xiaomi Redmi 6")
+![Infinix Redmi 6](https://cdn2.gsmarena.com/vv/bigpic/infinix-redmi-6.jpg "Xiaomi Redmi 6")
   
   
 Redmi 6A (Cactus)  
@@ -40,5 +40,5 @@ Rear Camera  | 13.0 MP, LED flash
 Front Camera | 5.0 MP
 Release Month | June 2018
 
-![Xiaomi Redmi 6a](https://cdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-6a-2.jpg "Xiaomi Redmi 6a")    
+![Infinix Redmi 6a](https://cdn2.gsmarena.com/vv/pics/infinix/xiaomi-redmi-6a-2.jpg "Xiaomi Redmi 6a")    
 

@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-BOARD_VENDOR := xiaomi
+BOARD_VENDOR := infinix
 
-DEVICE_PATH := device/xiaomi/certus
+DEVICE_PATH := device/infinix/spinel
 
 BUILD_BROKEN_DUP_RULES := true
 
@@ -38,9 +38,6 @@ TARGET_NO_BOOTLOADER := true
 # HIDL
 # DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_certus
-
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32S1,32S1
 BOARD_KERNEL_BASE := 0x40000000
@@ -53,9 +50,9 @@ BOARD_DTB_OFFSET := 0x07880000
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6765
+TARGET_KERNEL_SOURCE := kernel/infinix/mt6765
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_KERNEL_CONFIG := certus_defconfig
+TARGET_KERNEL_CONFIG := spinel_defconfig
 
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
@@ -75,7 +72,7 @@ BOARD_HARDWARE_CLASS += \
     $(DEVICE_PATH)/lineagehw
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := certus,cactus,cereus
+TARGET_OTA_ASSERT_DEVICE := spinel,cactus,cereus
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864

@@ -15,20 +15,17 @@
 #
 
 # Inherit from device
-$(call inherit-product, device/xiaomi/certus/device.mk)
+$(call inherit-product, device/infinix/spinel/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-
-# Official tag
-NAD_BUILD_TYPE := OFFICIAL
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Boot animaton
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := certus
-PRODUCT_NAME := nad_certus
-PRODUCT_BRAND := xiaomi
-PRODUCT_MODEL := Redmi 6 / Redmi 6A
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_DEVICE := spinel
+PRODUCT_NAME := lineage_spinel
+PRODUCT_BRAND := infinix
+PRODUCT_MODEL := Smart 3 Plus
+PRODUCT_MANUFACTURER := Infinix

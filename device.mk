@@ -31,11 +31,11 @@ TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 720
 
 # GMS
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-infinix
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 29
-PRODUCT_EXTRA_VNDK_VERSIONS := 29
+PRODUCT_TARGET_VNDK_VERSION := 28
+PRODUCT_EXTRA_VNDK_VERSIONS := 28
 
 # APNs
 PRODUCT_COPY_FILES += \
@@ -88,13 +88,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
     $(LOCAL_PATH)/permissions/com.mediatek.ims.plugin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.mediatek.ims.plugin.xml \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml \
-    $(LOCAL_PATH)/permissions/privapp-permissions-imsinit.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-imsinit.xml \
-    $(LOCAL_PATH)/permissions/privapp-permissions-certus.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-certus.xml \
+    $(LOCAL_PATH)/permissions/privapp-permissions-spinel.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-spinel.xml \
     $(LOCAL_PATH)/permissions/interfaces.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/interfaces.xml
-
-# Privapp-permissions whitelist for PhhTrebleApp
-PRODUCT_COPY_FILES += \
-       $(LOCAL_PATH)/permissions/privapp-permissions-me.phh.treble.app.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-me.phh.treble.app.xml
 
 # RCS
 PRODUCT_PACKAGES += \
@@ -118,15 +113,10 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
-# ImsInit hack
-PRODUCT_PACKAGES += \
-    ImsInit \
-    TrebleApp
-
 # Wi-Fi
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     WifiOverlay
 
 # Call proprietary blob setup
-$(call inherit-product-if-exists, vendor/xiaomi/mt6765-common/mt6765-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/infinix/mt6765-common/mt6765-common-vendor.mk)
